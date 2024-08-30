@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textInput"
+        android:layout_width="356dp"
+        android:layout_height="386dp"
+        android:text="@string/welcome"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <Button
+        android:id="@+id/buttonCompilar"
+        android:layout_width="225dp"
+        android:layout_height="101dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="clicOne"
+        android:text="@string/compile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="93dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="355dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="@string/insert_text"
+        android:inputType="text"
+        android:text=""
+        android:textAlignment="inherit"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCompilar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="27dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
